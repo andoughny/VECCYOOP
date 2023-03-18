@@ -27,12 +27,12 @@ public class Veccy extends Application {
             for (int j = 0; j < 1500; j++) {
                 if (i % 25 == 0 && j % 25 == 0) {
                     Rectangle r = new Rectangle(i, j, 25, 25);
-                    r.setFillColor(Color.GREEN);
+                    r.setFillColor(Color.BLUE);
                     model.addShape(r);
                 }
                 if (i % 50 == 0 && j % 50 == 0) {
                     Rectangle r = new Rectangle(i, j, 25, 25);
-                    r.setFillColor(Color.RED);
+                    r.setFillColor(Color.WHITE);
                     model.addShape(r);
                 }
             }
