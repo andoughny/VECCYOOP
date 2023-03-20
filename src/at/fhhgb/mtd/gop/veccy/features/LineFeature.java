@@ -5,7 +5,7 @@ import at.fhhgb.mtd.gop.veccy.model.NamedFeature;
 public class LineFeature implements NamedFeature {
     @Override
     public String getName() {
-        return null;
+        return "Line";
     }
 
     @Override

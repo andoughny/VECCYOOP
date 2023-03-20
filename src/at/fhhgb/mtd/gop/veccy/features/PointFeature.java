@@ -5,7 +5,7 @@ import at.fhhgb.mtd.gop.veccy.model.NamedFeature;
 public class PointFeature implements NamedFeature {
     @Override
     public String getName() {
-        return null;
+        return "Point";
     }
 
     @Override

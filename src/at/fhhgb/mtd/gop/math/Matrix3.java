@@ -48,5 +48,4 @@ public class Matrix3 {
     public double[][] getValues() {
         return values;
     }
-
 }

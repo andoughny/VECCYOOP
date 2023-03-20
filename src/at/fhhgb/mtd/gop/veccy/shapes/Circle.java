@@ -30,6 +30,13 @@ public class Circle implements DrawableShape {
         this.strokeColor = strokeColor;
     }
 
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
 
     //constructors
     public Circle(int x, int y, int radius) {
@@ -59,4 +66,5 @@ public class Circle implements DrawableShape {
         graphicsContext.fillOval(x,y, radius*2, radius*2);
         graphicsContext.strokeOval(x,y, radius*2, radius*2);
     }
+
 }

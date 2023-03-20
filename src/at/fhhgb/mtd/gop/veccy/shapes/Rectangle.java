@@ -38,6 +38,14 @@ public class Rectangle implements DrawableShape {
         this.strokeColor = strokeColor;
     }
 
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
     //area calculation method
     public int area() {
         return this.width * this.height;
