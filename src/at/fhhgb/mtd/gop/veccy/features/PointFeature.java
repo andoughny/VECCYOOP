@@ -36,12 +36,15 @@ public class PointFeature implements NamedFeature {
 
     @Override
     public void onMouseClick(int x, int y) {
-        currentPoint = new Point(x, y);
+        if (selected) {
+            currentPoint = new Point(x, y);
 
-        currentPoint.setFillColor(model.getCurrentFillColor());
-        currentPoint.setStrokeColor(model.getCurrentStrokeColor());
+            currentPoint.setFillColor(model.getCurrentFillColor());
+            currentPoint.setStrokeColor(model.getCurrentStrokeColor());
 
-        model.addShape(currentPoint);
+            model.addShape(currentPoint);
+        }
+
     }
 
     @Override
