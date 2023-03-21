@@ -34,6 +34,8 @@ public class Veccy extends Application {
         model.addFeature(new PointFeature());
         model.addFeature(new RectangleFeature());
 
+        Color fillColor = model.getCurrentFillColor();
+        Color strokeColor = model.getCurrentFillColor();
 
     }
 }

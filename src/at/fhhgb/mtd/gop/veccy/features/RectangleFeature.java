@@ -12,6 +12,8 @@ public class RectangleFeature implements NamedFeature {
 
     boolean selected = false;
 
+    CanvasModel model = new CanvasModel();
+
     public int getOriginX() {
         return originX;
     }
@@ -65,8 +67,8 @@ public class RectangleFeature implements NamedFeature {
 
                 currentRectangle = new Rectangle(x, y, 0, 0);
 
-                currentRectangle.setFillColor(CanvasModel.getCurrentFillColor());
-                currentRectangle.setStrokeColor(CanvasModel.getCurrentStrokeColor());
+                CanvasModel.getFillColor();
+                CanvasModel.getStrokeColor();
 
                 model.addShape(currentRectangle);
 
@@ -76,4 +78,4 @@ public class RectangleFeature implements NamedFeature {
             }
         }
     }
-}
+}x
