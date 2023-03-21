@@ -29,11 +29,13 @@ public class Veccy extends Application {
         VeccyGUI veccyGUI = new VeccyGUI(stage);
         CanvasModel model = veccyGUI.getModel();
 
-        model.addFeature(new CircleFeature());
-        model.addFeature(new LineFeature());
-        model.addFeature(new PointFeature());
-        model.addFeature(new RectangleFeature());
+        model.addFeature(new CircleFeature(model));
+        model.addFeature(new LineFeature(model));
+        model.addFeature(new PointFeature(model));
+        model.addFeature(new RectangleFeature(model));
 
+        Color fillColor = model.getCurrentFillColor();
+        Color strokeColor = model.getCurrentFillColor();
 
     }
 }

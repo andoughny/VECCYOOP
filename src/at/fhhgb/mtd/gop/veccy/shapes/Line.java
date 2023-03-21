@@ -51,4 +51,12 @@ public class Line implements DrawableShape {
         graphicsContext.strokeLine(x1, y1, x2, y2);
         graphicsContext.setStroke(this.strokeColor);
     }
+
+    public void setX2(int x) {
+        this.x2 = x;
+    }
+
+    public void setY2(int y) {
+        this.y2 = y;
+    }
 }

@@ -7,10 +7,20 @@ import at.fhhgb.mtd.gop.veccy.model.CanvasModel;
 
 public class RectangleFeature implements NamedFeature {
 
-    private Rectangle currentRectangle = null;
-    private int originX, originY;
+    // ---------------- instance variables ----------------
 
+    private CanvasModel model;
     boolean selected = false;
+    private Rectangle currentRectangle = null;
+
+    private int originX = 0;
+    private int originY = 0;
+
+    public RectangleFeature(CanvasModel model) {
+        this.model = model;
+    }
+
+    // -------------- getters and setters --------------
 
     public int getOriginX() {
         return originX;
@@ -36,6 +46,7 @@ public class RectangleFeature implements NamedFeature {
         this.selected = selected;
     }
 
+    // -------------- methods --------------
     @Override
     public String getName() {
         return "Rectangle";
@@ -53,7 +64,11 @@ public class RectangleFeature implements NamedFeature {
 
     @Override
     public void onMouseClick(int x, int y) {
-
+        if (selected) {
+            if (currentRectangle != null) {
+                currentRectangle = null;
+            }
+        }
     }
 
     @Override
@@ -65,8 +80,8 @@ public class RectangleFeature implements NamedFeature {
 
                 currentRectangle = new Rectangle(x, y, 0, 0);
 
-                currentRectangle.setFillColor(CanvasModel.getCurrentFillColor());
-                currentRectangle.setStrokeColor(CanvasModel.getCurrentStrokeColor());
+                currentRectangle.setFillColor(model.getCurrentFillColor());
+                currentRectangle.setStrokeColor(model.getCurrentStrokeColor());
 
                 model.addShape(currentRectangle);
 
