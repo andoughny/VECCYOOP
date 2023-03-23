@@ -11,8 +11,6 @@ public class LineFeature implements NamedFeature {
     boolean selected = false;
     private Line currentLine = null;
 
-    private int originX = 0;
-    private int originY = 0;
 
     public LineFeature(CanvasModel model) {
         this.model = model;
