@@ -11,8 +11,6 @@ public class Point implements DrawableShape {
     private Color fillColor;
 
 
-
-
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
@@ -52,6 +50,6 @@ public class Point implements DrawableShape {
 
     @Override
     public void draw(GraphicsContext graphicsContext) {
-        graphicsContext.strokeOval(this.x, this.y, 1, 1);
+        graphicsContext.strokeOval(this.x, this.y, 3, 3);
     }
 }

@@ -11,14 +11,10 @@ public class PointFeature implements NamedFeature {
     boolean selected = false;
     private Point currentPoint = null;
 
-    private int originX = 0;
-    private int originY = 0;
-
     public PointFeature(CanvasModel model) {
         this.model = model;
     }
-
-
+    
     @Override
     public String getName() {
         return "Point";

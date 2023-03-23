@@ -48,8 +48,8 @@ public class Line implements DrawableShape {
 
     @Override
     public void draw(GraphicsContext graphicsContext) {
-        graphicsContext.strokeLine(x1, y1, x2, y2);
         graphicsContext.setStroke(this.strokeColor);
+        graphicsContext.strokeLine(x1, y1, x2, y2);
     }
 
     public void setX2(int x) {

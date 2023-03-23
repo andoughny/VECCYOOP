@@ -38,11 +38,11 @@ class TransformFactoryTest {
             //skaliert um das doppelte
             assertArrayEquals(new double[] {10.0, 10.0, 1.0}, scaledVec.getValues());
 
-            //gespiegelt horizontal
-            assertArrayEquals(new double[] {5.0, -5.0, 1.0}, mirroredVerticalVec.getValues());
+            //gespiegelt vertikal
+            assertArrayEquals(new double[] {-5.0, 5.0, 1.0}, mirroredVerticalVec.getValues());
 
-            //gespiegelt vertical
-            assertArrayEquals(new double[] {-5.0, 5.0, 1.0}, mirroredHorizontalVec.getValues());
+            //gespiegelt horizontal
+            assertArrayEquals(new double[] {5.0, -5.0, 1.0}, mirroredHorizontalVec.getValues());
 
         }
 

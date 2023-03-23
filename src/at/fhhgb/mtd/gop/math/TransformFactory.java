@@ -24,8 +24,8 @@ public class TransformFactory {
 
     public static Matrix3 createHorizontalMirroring() {
         return  new Matrix3(new double[][]{
-                {-1,0,0},
-                {0,1,0},
+                {1,0,0},
+                {0,-1,0},
                 {0,0,1}
         }
         );
@@ -33,8 +33,8 @@ public class TransformFactory {
 
     public static Matrix3 createVerticalMirroring() {
         return  new Matrix3(new double[][]{
-                {1,0,0},
-                {0,-1,0},
+                {-1,0,0},
+                {0,1,0},
                 {0,0,1}
         }
         );
